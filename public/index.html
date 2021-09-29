@@ -9,39 +9,13 @@
     <script src="/js/jquery.min.js" type="text/javascript"></script>
     <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js" async></script>
     <!-- <script src="http://flw-pms-dev.eu-west-1.elasticbeanstalk.com/flwv3-pug/getpaidx/api/flwpbf-inline.js" async></script> -->
-    <script src="/js/rave_func.js" type="text/javascript"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <title>Epump-portal</title>
+    <title>E-pump transactions</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHDSK7K4G5" id="ga-scrpt"></script> -->
-    <script>
-      let userRoles = localStorage.userDetails && JSON.parse(localStorage.userDetails).role
-
-      if(userRoles) {
-        const API_KEY = userRoles.includes('Company') || userRoles.includes('Branch')
-          ? "G-DHDSK7K4G5"
-          : userRoles.includes('Customer')
-            ? "G-L7P574QRC9"
-            : null
-        
-            (API_KEY && runGoogleScript())
-
-        function runGoogleScript() {
-
-          window.dataLayer = window.dataLayer || [];
-          function gtag() { dataLayer.push(arguments); }
-          gtag('js', new Date());
-
-          gtag('config', API_KEY);
-        }
-      }
-
-    </script>
   </head>
   <body>
     <noscript>

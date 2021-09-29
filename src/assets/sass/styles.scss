@@ -1,9 +1,9 @@
 // @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
 @import 'colors';
-@import "side_nav";
+// @import "side_nav";
 @import "utils";
 @import "scroll";
-@import "account";
+// @import "account";
 
 
 $primaryColor: #4c2e73;
@@ -8753,7 +8753,3 @@ input {
     width: 95% !important;
   }
 }
-
-@import "paginator";
-@import "invoices";
-@import "assets";
